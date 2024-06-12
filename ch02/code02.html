@@ -7,11 +7,18 @@
 </head>
 <body>
     <script>
-        var a = 1;
-        if(a === 1) {
-            console.log("true");
+        var id = prompt('ID를 입력하세요.');
+        if(id == 'koeyh') {
+            var pass = prompt('비밀번호를 입력하세요.');
+            if(pass == '1111') {
+            alert('정보 일치');
+            } else {
+                alert('비밀번호 틀림');
+            }
+        } else if (id == 'koeyh1') {
+            alert('이거 말고 다른 아이디');
         } else {
-            console.log("false");
+            alert('비슷하지도 않은 입력');
         }
     </script>
 </body>
