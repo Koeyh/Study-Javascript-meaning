@@ -19,8 +19,15 @@
         var score = new Object();
         score['kim'] = 'C';
         score['park'] = 100;
+        score['lee'] = '가';
         // console.log(score);
-        console.log(score['kim']);
+        // console.log(score['kim']);
+        // console.log(score.park);
+        
+        // 객체와 반복문의 만남!
+        for(key in score) {
+            console.log("key :" + key + " value : " + score[key]);
+        }
     </script>
 </body>
 </html>
