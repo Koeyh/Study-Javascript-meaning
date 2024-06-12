@@ -20,10 +20,23 @@
         // score['science']();
 
         // 객체 접근 방법
-        console.log(score.korean.kim);
+        console.log('score.korean.kim : '+score.korean.kim);
         console.log(score['korean'].kim);
         console.log(score['korean']['park']);
 
+        var grades = {
+            'list': {'oracle': 10, 'MySQL': 8, 'msSql': 7},
+            'show': function(){
+                // 해당 객체의 값 출력
+                // console.log(this.list);
+
+                for(var name in this.list) {
+                    console.log(name, this.list[name])
+                }
+            }
+        }
+        // grades['show']();
+        grades.show();
     </script>
 </body>
 </html>
