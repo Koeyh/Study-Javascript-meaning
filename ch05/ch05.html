@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 지향</title>
+</head>
+<body>
+    <script>
+        var score = {
+            'korean': {'kim': 80, 'lee': 60, 'park': 90},
+            'math': {'kim': 30, 'lee': 40, 'park': 60},
+            'english': {'kim': 50, 'lee': 80, 'park': 70},
+            'science': function(){
+                alert('과학시험은 없어요');
+            }
+        }
+        // alert(score['korean']['kim']);
+        // alert(score['english']['park']);
+        // score['science']();
+
+        // 객체 접근 방법
+        console.log(score.korean.kim);
+        console.log(score['korean'].kim);
+        console.log(score['korean']['park']);
+
+    </script>
+</body>
+</html>

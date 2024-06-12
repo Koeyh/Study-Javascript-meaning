@@ -6,6 +6,7 @@
     <title>객체</title>
 </head>
 <body>
+<ul>
     <script type="text/javascript">
         // 기본
         // var score = {'kim': 'A', 'park':90}
@@ -25,9 +26,15 @@
         // console.log(score.park);
         
         // 객체와 반복문의 만남!
+        // for(key in score) {
+        //     console.log("key :" + key + " value : " + score[key]);
+        // }
+
+        // 목록 형식으로 출력
         for(key in score) {
-            console.log("key :" + key + " value : " + score[key]);
+            document.write("<li>key :" + key + " | value : " + score[key] + "</li>");
         }
     </script>
+</ul>
 </body>
 </html>
