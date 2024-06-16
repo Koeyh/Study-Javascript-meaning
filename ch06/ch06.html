@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드 활용 연습</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="첫 번째 정수">
+    <select id="operator">
+        <option value="">선택</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="num2" placeholder="두 번째 정수">
+    <button onclick="calculate()">계산하기</button>
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseInt(document.getElementById('num2').value);
+            var result;
+
+            if (operator === '+') {
+                result = num1 + num2;
+            } else if (operator === '-') {
+                result = num1 - num2;
+            } else if (operator === '*') {
+                result = num1 * num2;
+            } else if (operator === '/') {
+                result = num1 / num2;
+            } else {
+                result = "연산자 선택 필수!";
+            }
+            document.getElementById('result').innerHTML = `결과: ${num1} ${operator} ${num2} = ${result}`;
+        }
+    </script>
+</body>
+</html>
